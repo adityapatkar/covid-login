@@ -16,5 +16,5 @@ def login_page():
 
 @app.route("/dashboard/")
 def dashboard():
-    return redirect("http://www.google.com")
+    return redirect("http://ml-hub.herokuapp.com")
 
