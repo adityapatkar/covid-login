@@ -2,3 +2,4 @@ passlib
 Flask
 pymongo
 gunicorn
+dnspython
