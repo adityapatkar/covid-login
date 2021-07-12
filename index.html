@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Object | Detection</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="full_page">
+            <div class="navbar">
+                <div>
+                    <a href="home.html">Object Detection </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block' " style=""width:auto;">Login</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div id="login-form" class="login-page">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="login()" class="toggle-btn">Login</button>
+                        <button type="button" onclick="signup()" class="toggle-btn">Sign Up</button>
+                    </div>
+                    <form id="login" class="input-group-login">
+                        <input type="text" class="input-field" placeholder="Email Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+                    <form id ="signup" class="input-group-signup">
+                        <input type="text" class="input-field" placeholder="First Name" required>
+                        <input type="text" class="input-field" placeholder="Last Name" required>
+                        <input type="text" class="input-field" placeholder="Email Id" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="password" class="input-field" placeholder="Confirm Password" required>
+                        <input type="checkbox" class="check-box"><span>I agree to the term and conditions</span>
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            var a = document.getElementById("login");
+            var b = document.getElementById("signup");
+            var c = document.getElementById("btn");
+            function signup()
+            {
+                a.style.left = '-400px';
+                b.style.left = '50px';
+                c.style.left = '110px';
+            }
+            function login()
+            {
+                a.style.left = '50px';
+                b.style.left = '450px';
+                c.style.left = '0px';
+            }
+        </script>
+        <script>
+            var model = document.getElementById('login-form');
+            window.onclick = function(event)
+            {
+                if(event.target == modal)
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'default.html' %}
+
+{% block content %}
+    <div class="card-wrapper">
+        <div class="card">
+            <h1 class="center">Log In</h1>
+                    <form name="login_form">
+
+                        <label for="email"></label>
+                        <input type="email" name="email" class="field" placeholder="E-mail" required>
+
+                        <label for="password"></label>
+                        <input type="password" name="password" class="field" placeholder="Password" required>
+                        <p class="error error--hidden"></p>
+                        <input type="submit" value="Log In" class="submit-btn">
+                    </form>
+                    <div class="center">
+                    <a class ="a" href="/" ><small></small>Don't have an account? <u>Sign up!</u> </small> </a>
+                </div>
+        </div>
+    </div>
+    {% endblock %}
