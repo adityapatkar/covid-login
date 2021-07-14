@@ -228,7 +228,7 @@ nav ul li a{
   text-decoration: none;
   font-size: 20px;
   color: black;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 
@@ -242,7 +242,7 @@ nav ul li button{
   border: 0;
   outline: none;
   border-radius: 30px;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 nav ul li button:hover{
@@ -259,7 +259,7 @@ a{
   color: #f38200;
   padding: 20px;
   font-size: 28px;
-  font-family: cursive
+  font-family: sans-serif;
 }
 
 .a{
@@ -267,7 +267,7 @@ a{
   color: #f38200;
   padding: 10px;
   font-size: 17px;
-  font-family: cursive;
+  font-family: sans-serif;
   text-align : center
 }
 u:hover{
