@@ -15,7 +15,7 @@ def login_page():
     return render_template('login.html')
 
 @app.route("/about/")
-def dashboard():
+def about():
     return render_template('aboutus.html')
 
 @app.route("/dashboard/")
