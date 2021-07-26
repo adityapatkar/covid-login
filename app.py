@@ -20,5 +20,5 @@ def dashboard():
 
 @app.route("/dashboard/")
 def dashboard():
-    return redirect('http://ml-hub.herokuapp.com/')
+    return redirect("http://ml-hub.herokuapp.com")
 
