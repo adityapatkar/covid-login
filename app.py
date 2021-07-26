@@ -18,3 +18,7 @@ def login_page():
 def dashboard():
     return render_template('aboutus.html')
 
+@app.route("/dashboard/")
+def dashboard():
+    return redirect('http://ml-hub.herokuapp.com/')
+
