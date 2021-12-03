@@ -7,8 +7,8 @@ app = Flask(__name__)
 from user import routes
 
 @app.route("/")
-def home():
-    return render_template('home.html')
+def landing():
+    return render_template('landing.html')
 
 @app.route("/login/")
 def login_page():
@@ -20,5 +20,8 @@ def about():
 
 @app.route("/dashboard/")
 def dashboard():
-    return redirect("http://ml-hub.herokuapp.com")
+    return redirect("http://localhost:8501")
 
+@app.route("/signup/")
+def home():
+    return render_template('home.html')

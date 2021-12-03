@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width={device-width}, initial-scale=1.0">
-    <title>mlhub.ai</title>
-    <link rel="stylesheet" href="/static/css/normalize.css">
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>diagnose.ai</title>
+    <link rel="stylesheet" href="/static/css/style2.css">
     <link rel="icon" href="/static/fevicon.png">
 </head>
 <body>
-    <div class="full_page">
-        <div class="navbar">
-            <div class="logo">
-                <a href="/">
-                <img src="/static/ML_Hub.png" width="100" 
-                height="100" />
-              </a>
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="http://ml-hub.herokuapp.com">Use Without Login</a></li>
-                    <li><form method="get" action="/login"><button class="loginbtn" onclick="window.location.href='/login'.style.display='block' " style="width:auto;">Login</button></form>
-                    </li>
-                </ul>
-            </nav>
+    <header id="header" class="header">
+        <div class="header__container container container--px">
+           <nav class="navbar flex">
+              <a href="/" class="navbar__brand" title="Back to the homepage">Diagnose.ai</a>
+              <button id="toggleMenuBtn" class="navbar__toggle-menu toggle-menu" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
+                 <div class="toggle-menu__hamburger hamburger" aria-hidden="true">
+                    <div class="hamburger__item"></div>
+                    <div class="hamburger__item"></div>
+                    <div class="hamburger__item"></div>
+                 </div>
+              </button>
+              <ul id="menuList" class="navbar__menu menu" role="menu">
+                 <li class="menu__item" role="none">
+                    <a href="/" class="menu__link menu__link--active" role="menuitem">Home</a>
+                 </li>
+                 <li class="menu__item" role="none">
+                    <a href="#" class="menu__link" role="menuitem">Services</a>
+                 </li>
+                 <li class="menu__item" role="none">
+                    <a href="/about/" class="menu__link" role="menuitem">About Team</a>
+                 </li>
+                 <li class="menu__item" role="none">
+                    <a href="/signup/" class="menu__link" role="menuitem">Sign Up</a>
+                 </li>
+                 <li class="menu__item" role="none">
+                    <a href="/login/" class="menu__link cta cta--primary" role="menuitem">Login</a>
+                 </li>
+              </ul>
+           </nav>
+           <div id="overlayLayer" class="header__overlay"></div>
         </div>
+     </header>
     {% block content %}
 
     {% endblock %}
-    </div>
     <div class="footer-brand-logos">
 
     <!-- TOPSHOP -->
@@ -52,9 +65,11 @@
     <a href="https://palletsprojects.com/p/flask/">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/220px-Flask_logo.svg.png" alt="The Room">
     </a>
-  
+  <div class="center"><p><i> Credits @2021 Aditya Patkar</i></p></div>
   </div>
     <script src="/static/js/jquery.js"></script>
     <script src="/static/js/scripts.js"></script>
+    <script src="/static/js/handle.js"></script>
+   
 </body>
 </html>

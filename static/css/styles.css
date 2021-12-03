@@ -384,31 +384,4 @@ span{
   font-size: 15;
 }
 
-.footer-brand-logos {
-  margin: 0 auto;
-  width: 960px; 
-  height: 56px; 
-  text-align: justify;
-  background-color: #f0f0f0; 
-}
 
-.footer-brand-logos:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-.footer-brand-logos * {
-  padding: 0;
-  margin: 0;
-}
-
-.footer-brand-logos img {
-  height: 56px;        
-}
-
-.footer-brand-logos a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 0 20px;
-}

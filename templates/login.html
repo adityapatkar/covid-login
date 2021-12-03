@@ -2,21 +2,32 @@
 
 {% block content %}
     <div class="card-wrapper">
-        <div class="card">
-            <h1 class="center">Log In</h1>
-                    <form name="login_form">
+        <section class="hero">
+            <div class="hero__container container container--px flex">
+                <div class="hero__text">
+                    <div class="card">
+                        <h1 class="center">Log In</h1>
+                                <form name="login_form">
 
-                        <label for="email"></label>
-                        <input type="email" name="email" class="field" placeholder="E-mail" required>
+                                    <label for="email"></label>
+                                    <input type="email" name="email" class="field" placeholder="E-mail" required>
 
-                        <label for="password"></label>
-                        <input type="password" name="password" class="field" placeholder="Password" required>
-                        <p class="error error--hidden"></p>
-                        <input type="submit" value="Log In" class="submit-btn">
-                    </form>
-                    <div class="center">
-                    <a class ="a" href="/" ><small></small>Don't have an account? <u>Sign up!</u> </small> </a>
+                                    <label for="password"></label>
+                                    <input type="password" name="password" class="field" placeholder="Password" required>
+                                    <p class="error error--hidden"></p>
+                                    <input type="submit" value="Log In" class="submit-btn">
+                                </form>
+                                <div class="center">
+                                <a class ="a" href="/" ><small></small>Don't have an account? <u>Sign up!</u> </small> </a>
+                            </div>
+                    </div>
                 </div>
-        </div>
+                <div class="hero__image-wrapper">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Doctor_with_Nurse_Cartoon.svg/1200px-Doctor_with_Nurse_Cartoon.svg.png" alt="Hand Holding Joystick" class="hero__image">
+                </div>
+            </div>
+        </section>
     </div>
     {% endblock %}
+
+    
