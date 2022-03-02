@@ -39,7 +39,7 @@ $("form[name=login_form").submit(function(e)
         dataType : "json",
         success: function(resp) {
             console.log(resp);
-            window.location.href = "/dashboard/";
+            window.location.href = "https://diagnose-aditya.herokuapp.com/";
         },
         error: function(resp) {
             console.log(resp);
