@@ -16,11 +16,11 @@ def login_page():
 
 @app.route("/about/")
 def about():
-    return render_template('aboutus.html')
+    return redirect("https://github.com/adityapatkar/covid-detection")
 
 @app.route("/dashboard/")
 def dashboard():
-    return redirect("http://localhost:8501")
+    return redirect("https://diagnose-aditya.herokuapp.com/")
 
 @app.route("/signup/")
 def home():
