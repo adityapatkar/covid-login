@@ -25,3 +25,7 @@ def dashboard():
 @app.route("/signup/")
 def home():
     return render_template('home.html')
+
+@app.route("/diagnose/")
+def mainapp():
+    return render_template('mainapp.html')
