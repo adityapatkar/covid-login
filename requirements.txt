@@ -3,3 +3,4 @@ Flask
 pymongo
 gunicorn
 dnspython
+Flask-Session

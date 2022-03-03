@@ -1,4 +1,5 @@
-from flask import Flask, jsonify, request, redirect
+from flask import Flask, jsonify, request, redirect, session
+from flask_session import Session
 import uuid
 from passlib.hash import pbkdf2_sha256
 import pymongo
@@ -45,6 +46,7 @@ class User:
         })
 
         if user_e and pbkdf2_sha256.verify(luser['password'], user_e['password']):
+            session["email"] = luser["email"]
             return {"message": "Success"}, 201
 
         return jsonify({"error" : "login failed"}), 401
